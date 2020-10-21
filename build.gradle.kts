@@ -25,7 +25,7 @@ application {
     mainClassName = "MainKt"
 }
 nativeImage {
-    graalVmHome = "/Users/jangroot/.sdkman/candidates/java/20.2.0.r11-grl"
+    graalVmHome = System.getenv("GRAAL_HOME")
     mainClass ="MainKt"
     executableName = "f1"
     outputDirectory = file("$buildDir/executable")
